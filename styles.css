@@ -1,0 +1,150 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    height: 900PX;
+    width: 1920px;
+    flex-direction: column;
+    background-color: #F2E9D8;
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*위에까지가 매뉴 */
+
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    height: 900PX;
+    width: 1920px;
+    justify-content: space-evenly
+}
+
+.boxcat {
+    display: flex;
+    justify-content: right;
+}
+
+.topscreen {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 30px
+}
+
+.topscreen-text1 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.topscreen-text2 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+/*위에까지가 1*/
+
+.content1 {
+    display: flex;
+    flex-direction: row;
+    margin: 90px auto 90px 270px;
+    gap: 20px;
+}
+
+.hoduimage {
+    width: 660px;
+    height: 390px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.content1-test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content1-subtest1 {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.content1-subtest2 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+/*위에까지가 2*/
+
+.gallery {
+    width : 1920px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galleryimage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 72px;
+    margin-top: 20px;
+}
+
+.galleryimage img {
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.gallery-text{
+    text-align: center;
+}
+
+.gallerytitle {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #D97652;
+}
+
+.gallery-subtext {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #D97652;
+}
