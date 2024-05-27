@@ -143,6 +143,8 @@ body {
 }
 
 .galleryimage img {
+    width: 378px;
+    height: 378px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
 }
@@ -189,9 +191,14 @@ body {
     color: #D97652;
 }
 
+.morbtn {
+    border: none;
+    background-color: transparent;
+}
+
 /*위에까지가 3*/
 
-}
+
 .map-title {
     font-size: 36px;
     line-height: 45px;
@@ -237,6 +244,7 @@ body {
 
 .btn3 {
     border: none;
+    background-color: transparent;
 }
 
 /*위에까지가 5*/

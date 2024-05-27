@@ -21,18 +21,20 @@ map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
 
 // /-----------------------------------------------/
-const listPic = document.querySelector('.morbtn');
-const btn = document.querySelector('button');
+const listPic = document.querySelector('.galleryimage');
+const btn = document.querySelector('.morbtn');
 let pageToPatch = 1;
 
 
-btn.addEventListener('click', ()=>{fetchImages(pageToPatch += 1)});
+btn.addEventListener('click', () => {
+    fetchImages(pageToPatch += 1)
+});
 
-async function fetchImages(page){
-    try{
-        const response = await fetch(`https://picsum.photos/v2/list?page=${page}&limit=5`);
+async function fetchImages(page) {
+    try {
+        const response = await fetch(`https://picsum.photos/v2/list?page=${page}&limit=6`);
 
-        if(!response.ok){
+        if (!response.ok) {
             throw new Error('네트워크 응답에 문제가 있습니다.');
         }
 
@@ -41,13 +43,13 @@ async function fetchImages(page){
         console.log(datas);
         makeImageList(datas);
 
-    }catch(error){
+    } catch (error) {
         console.error(error);
     }
 }
 
-function makeImageList(datas){
-    datas.forEach((data)=>{
-        listPic.insertAdjacentHTML('beforeend', `<li class="img-width"><img src="${data.download_url}" alt=""></li>`);
+function makeImageList(datas) {
+    datas.forEach((data) => {
+        listPic.insertAdjacentHTML('beforeend', `<img src="${data.download_url}" alt="">`);
     });
 }
