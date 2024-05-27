@@ -113,10 +113,12 @@ a {
 /*위에까지가 2*/
 
 .gallery {
-    width : 1920px ;
+    width: 1920px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px
+    /*border-top: 1px solid #C4C4C4;*/
 }
 
 .galleryimage {
@@ -131,7 +133,7 @@ a {
     border-radius: 30px;
 }
 
-.gallery-text{
+.gallery-text {
     text-align: center;
 }
 
@@ -143,8 +145,110 @@ a {
 }
 
 .gallery-subtext {
-    font-size: 48px;
-    line-height: 60px;
-    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.gallery-subtext span {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
     color: #D97652;
 }
+
+.gallerydown {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.morecontent {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.highlight {
+    color: #D97652;
+}
+
+/*위에까지가 3*/
+
+.map {
+    margin: 68px 300px 80px;
+}
+
+.map-title {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.map {
+    height: 520px;
+    width: 1278px;
+    /*background-color: #635fa0;*/
+    border-radius: 10px;
+}
+
+/*위에까지가 4*/
+
+ .postbox {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 50px 58px;
+     margin: 70px 300px 50px;
+     border-radius: 30px;
+     background-color: #263140;
+     color: #FFFFFF;
+     width:1280px;
+     height: 201px;
+ }
+
+.post-title {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.post-sub {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    gap: 10px;
+}
+
+.btn3{ border: none;}
+
+/*위에까지가 5*/
+
+.footer {
+    position:relative;
+    outline: none;
+
+}
+.footercat {
+    background-image:url('image/footercat.jpg');
+    width: 1920px;
+    height: 340px;
+    object-fit: cover;
+    background-position: center;
+}
+.footerbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:1280px;
+    height: 201px;
+    margin: 90px auto 90px 270px;
+}
+
+.btn4 {
+    width: 226px;
+    height: 70px;
+}
+
