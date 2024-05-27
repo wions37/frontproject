@@ -15,6 +15,10 @@ header {
     background-color: #F2E9D8;
 }
 
+.maincontent{
+    padding-left: 320px;
+    padding-right: 320px;
+}
 .top {
     display: flex;
     justify-content: space-around;
@@ -39,6 +43,9 @@ a {
     color: inherit;
 }
 
+body {
+    max-width: 1920px;
+}
 /*위에까지가 매뉴 */
 
 
@@ -80,7 +87,7 @@ a {
 .content1 {
     display: flex;
     flex-direction: row;
-    margin: 90px auto 90px 270px;
+    /*margin: 90px auto 90px 270px;*/
     gap: 20px;
 }
 
@@ -113,7 +120,7 @@ a {
 /*위에까지가 2*/
 
 .gallery {
-    width: 1920px;
+    /*width: 1920px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,9 +184,7 @@ a {
 
 /*위에까지가 3*/
 
-.map {
-    margin: 68px 300px 80px;
-}
+
 
 .map-title {
     font-size: 36px;
@@ -187,11 +192,13 @@ a {
     font-weight: 700;
 }
 
-.map {
+.mapp {
     height: 520px;
     width: 1278px;
     /*background-color: #635fa0;*/
     border-radius: 10px;
+    /*margin: 68px 300px 80px;*/
+    margin-bottom: 80px;
 }
 
 /*위에까지가 4*/
@@ -201,12 +208,12 @@ a {
      justify-content: space-around;
      align-items: center;
      padding: 50px 58px;
-     margin: 70px 300px 50px;
      border-radius: 30px;
      background-color: #263140;
      color: #FFFFFF;
      width:1280px;
      height: 201px;
+
  }
 
 .post-title {
@@ -227,25 +234,35 @@ a {
 /*위에까지가 5*/
 
 .footer {
-    position:relative;
-    outline: none;
-
+    display: flex;
+    flex-direction: column;
+    /*position:relative;*/
+    /*outline: none;*/
 }
+
+.line {margin-block : 80px;
+   background-color: rgba(196, 196, 196, 1);
+}
+
+
 .footercat {
-    background-image:url('image/footercat.jpg');
+    background-image: url('image/footercat.jpg');
     width: 1920px;
     height: 340px;
     object-fit: cover;
     background-position: center;
+    position:relative;
+    /*padding: 100px;*/
 }
-.footerbox {
+.footerbox1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width:1280px;
-    height: 201px;
-    margin: 90px auto 90px 270px;
+    width:1920px;
+    height:201px;
+    /*margin: 90px auto 90px 270px;*/
 }
+
 
 .btn4 {
     width: 226px;
